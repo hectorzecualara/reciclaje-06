@@ -2,74 +2,309 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda en línea</title>
-    <link rel="stylesheet" href="style.css">
+    <title>RECICLAJE - CUIDEMOS EL PLANETA</title>
+    <style>
+        body {
+            background-color: #e6f2ff;
+            font-family: Verdana, sans-serif;
+            padding: 30px;
+            color: #333;
+        }
+
+        h1, h2 {
+            text-transform: uppercase;
+            text-decoration: underline;
+            color: #00695c;
+        }
+
+        p, li {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        img {
+            max-width: 100%;
+            margin: 20px auto;
+            display: block;
+            border: 2px solid #ccc;
+        }
+
+        .gif-grande {
+            width: 100%;
+            height: auto;
+            margin: 0;
+            border: none;
+        }
+
+        .video-derecha, .video-izquierda, .video-centro {
+            max-width: 45%;
+            border: 3px solid #00695c;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 105, 92, 0.3);
+            margin: 20px;
+        }
+
+        .video-derecha { float: right; margin-left: 20px; }
+        .video-izquierda { float: left; margin-right: 20px; }
+        .video-centro { display: block; margin: 20px auto; max-width: 90%; }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .seccion {
+            margin-bottom: 40px;
+        }
+
+        a {
+            color: #00796b;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .video-derecha, .video-izquierda {
+                float: none;
+                display: block;
+                margin: 20px auto;
+                max-width: 90%;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><button onclick="verProductos('labiales')">labiales</button></li>
-                <li><button onclick="verProductos('productos para la cara')">productos para la cara</button></li>
-                <li><button onclick="verProductos('perfumes')">perfumes</button></li>
-                <li><button onclick="verProductos('uñas brillos')">uñas brillos</button></li>
-                <li><button onclick="verProductos('cosas-del-hogar')">Cosas del Hogar</button></li>
-                <li><button onclick="verProductos('electrodomesticos')">Electrodomésticos</button></li>
-            </ul>
-        </nav>
+        <img src="Gestion-Residuos.gif" alt="Título animado de Contaminación Ambiental" class="gif-grande"width="460" height="260" controls>
     </header>
 
     <main>
-        <div id="productos-ropa-mujer" class="productos-categoria"></div>
-        <div id="productos-ropa-hombre" class="productos-categoria"></div>
-        <div id="productos-zapatos" class="productos-categoria"></div>
-        <div id="productos-accesorios" class="productos-categoria"></div>
-        <div id="productos-cosas-del-hogar" class="productos-categoria"></div>
-        <div id="productos-electrodomesticos" class="productos-categoria"></div>
-        
-        <div id="productos-carrito">
-            <h3>Carrito de compras</h3>
-            <ul id="productos-carrito-lista"></ul>
-            <p id="total-pagar">Total a pagar: $0</p>
+        <section class="seccion">
+            <p>El <strong>reciclaje</strong> es un proceso mediante el cual los residuos son transformados para darles una segunda vida útil. Su objetivo principal es <u>reducir el impacto ambiental</u>.</p>
+            <p>Este proceso implica la recolección, clasificación, procesamiento y reutilización de materiales como papel, plástico, vidrio y metales.</p>
+            <p>El reciclaje no solo ayuda al medio ambiente, sino que también tiene un impacto económico positivo.  </p>            
+           <p>El reciclaje es uno de los pilares fundamentales para la sostenibilidad ambiental y la conservación de recursos naturales. A través de este proceso, los materiales que en un principio eran considerados como residuos, se transforman para convertirse en nuevos productos, lo que reduce el consumo de recursos naturales y disminuye el impacto negativo sobre el medio ambiente. Aunque el concepto de reciclaje es sencillo, su importancia es vasta y trasciende más allá de lo que parece a simple vista. En este artículo, exploraremos qué es el reciclaje, cómo funciona, sus beneficios y por qué es crucial en la lucha contra el cambio climático y la protección del planeta.</p>
+         <p> El reciclaje es el proceso mediante el cual los materiales de desecho, como plásticos, metales, vidrios y papel, son recolectados, procesados y transformados en nuevos productos. Este ciclo evita que estos materiales terminen en vertederos, donde ocuparían grandes espacios y liberarían sustancias tóxicas. A lo largo de la historia, la humanidad ha creado una enorme cantidad de productos que, al final de su vida útil, se convierten en residuos. Sin embargo, no todo debe ser desechado. Muchos de estos materiales pueden ser reutilizados, transformados y reincorporados al ciclo de producción.</p>
+
+<p>El reciclaje no es solo un proceso de recolección y procesamiento; también implica el diseño de productos para que puedan ser reciclados al final de su vida útil, lo que se conoce como «diseño para el reciclaje». Este enfoque busca optimizar la facilidad con la que un producto puede ser descompuesto y convertido en materiales reutilizables, reduciendo al mismo tiempo la cantidad de residuos generados.</p>
+<p>El proceso de reciclaje varía dependiendo del tipo de material que se esté reciclando, pero generalmente sigue un patrón similar. Primero, los residuos deben ser recolectados y transportados a centros de reciclaje donde se clasifican. La clasificación de los materiales es una de las partes más cruciales del proceso, ya que los diferentes materiales requieren diferentes técnicas de reciclaje. Por ejemplo, el papel se puede reciclar en pulpa, mientras que el vidrio y el metal se funden para crear nuevos productos.
+Después de la clasificación, los materiales se limpian para eliminar cualquier residuo no deseado y se procesan. Por ejemplo, los plásticos pueden ser triturados en pequeños fragmentos y luego derretidos para formar nuevos productos. Los metales, como el aluminio, pueden ser fundidos y reutilizados para fabricar otros objetos. El reciclaje de papel involucra su disolución en agua para crear una pulpa, que luego se seca para formar nuevas hojas de papel. El proceso varía, pero todos tienen un objetivo común: transformar materiales de desecho en recursos útiles.</p>
+        </section>
+
+        <img src="IMG-20250429-WA0000.jpg" alt="Tipos de contenedores de reciclaje"width="460" height="260" controls>
+
+        <section class="seccion clearfix">
+            <video class="video-derecha" controls>
+                <source src="videor1.mp4" type="video/mp4"width="460" height="260" controls>
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </section>
+
+        <section class="seccion">
+            <h2>Tipos de materiales reciclables</h2>
+            <ul>
+                <li><strong>PLASTICOS:</strong> Imposible entender la sociedad actual sin ellos.
+
+El plástico está presente en innumerables productos, desde los envases y bandejas para alimentos, hasta envases para detergentes, productos de higiene, muebles, bolsas, envoltorios,…
+
+Aunque el reciclaje de plástico presenta algunos desafíos debido a la diversidad de tipos y grados de plástico, algunos tipos de plástico son más fácilmente reciclables que otros.</li>
+                <li><strong>TIPOS DE PLASTICOS:</strong> PET (tereftalato de polietileno): está en las botellas de agua y envases de alimentos.
+
+HDPE (polietileno de alta densidad): en productos de limpieza y tetrabriks.
+
+PVC (policloruro de vinilo): en cables, tuberías y envases de productos de limpieza.
+
+LDPE (Polietileno de baja densidad): utilizado en papel film y bolsas,…
+
+PP (Polipropileno): muy utilizado en piezas de automóvil, en la construcción y tapones para envases de alimentos.
+
+PS (Poliestireno): utilizado en embalajes con espumas
+
+Otros: son plásticos distintos a los anteriores o mezclas</li>
+                <li><strong>VIDRIO:</strong> Un material que puede ser reciclado siempre y sin que pierda sus propiedades.
+
+Puede ser fundido y convertido en nuevos envases de vidrio, botellas.</li>
+                <li><strong>Metales:</strong> Los metales son altamente reciclajes y tienen gran valor porque no pierden propiedades.
+El aluminio, el acero, el cobre y el hierro  son muy valorados.
+Su reciclaje permite la fabricación de nuevas latas de bebida, utensilios de cocina, piezas de la industria del automóvil, electrodomésticos, estructuras metálicas.</li>
+                <li><strong>TEXTILES:</strong> Como ropa, cortinas, sábanas o toallas,… son productos que pueden ser reciclado y reutilizar sus fibras para nuevos productos.</li>
+                <li><strong>PRODUCTOS ELECTRONICOS:</strong> Todos ellos tienen muchos componentes que pueden ser reciclados y valorizados para nuevos productos.
+Se componen de metales y plásticos útiles.
+Los viejos pueden ser reciclados en nuevos teléfonos móviles, impresoras, ordenadores.</li>
+<li><strong>ACEITE VEGETAL:</strong> Se utilizan muchísimo en nuestros hogares y es un residuo que si lo tiramos por el desagüe contamina mucho el agua y complica el trabajo en las depuradoras.Una vez separado se puede reciclar en nuevos productos como biocarburantes, jabones y otros usos en la industria química como ceras y barnices..</li>
+<li><strong>MADERA:</strong> La madera es otro material que puede ser reciclado si se separa correctamente.
+Se puede usar para fabricar nuevos productos como muebles de madera reciclada, aglomerado, palets.</li>
+            </ul>
+            <img src="IMG-20250430-WA0005.jpg" alt="Contenedores reciclables"width="460" height="260" controls>
+        </section>
+
+        <section class="seccion clearfix">
+            <video class="video-izquierda" controls>
+                <source src="videor2.mp4" type="video/mp4"width="460" height="260" controls>
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </section>
+
+        <section class="seccion">
+            <h2>¿Por qué es importante reciclar?</h2>
+            <p>El reciclaje tiene un gran impacto ambiental, social y económico. Al reciclar:</p>
+            <ul>
+                <li><u><strong>Disminuimos la cantidad de basura</u> que generamos.</li></strong>
+                <li><strong>Reducimos el uso de recursos naturales.</li></strong>
+                <li><strong>Conservamos energía.</li></strong>
+                <li><strong>Disminuimos la contaminación del aire, agua y suelo.</li></strong>
+                <li><strong>Se generan empleos en la industria del reciclaje.</li></strong>
+                <p>Global Recycling Foundation señala múltiples ventajas, aunque pueden resumirse en que conserva los recursos naturales y reduce la sobreexplotación de materias primas protegiendo así los hábitats. Contribuye además a economizar energía ya que los productos reciclados prescinden de varios pasos imprescindibles en el proceso de fabricación. Es decir, se necesita mucha más energía para extraer, refinar, transportar y procesar materias primas que para transformar materiales reciclados ya disponibles.</p>
+                <p>Según el Instituto Nacional de la Salud de Estados Unidos, “se precisa un 95% menos de energía para reciclar aluminio que para fabricarlo a partir de materias primas, mientras que el uso de chatarra de acero en lugar de mineral virgen para fabricar acero nuevo requiere un 40% menos de agua y genera un 97% menos de desechos mineros”. “El acero reciclado ahorra un 60% de energía en la producción; los periódicos reciclados, un 40%; los plásticos reciclados, un 70%; y el vidrio reciclado, un 40%”.
+
+Así, reducir la explotación de minas, canteras y bosques, evitar procesos como el refinado y la transformación industrial de esas materias primas, junto con el consiguiente ahorro de energía, contribuye notablemente a disminuir la emisión de gases de efecto invernadero (GEI) como el dióxido de carbono (CO2, el principal causante del calentamiento global), además de la contaminación del aire, el suelo y el agua. Para hacerse una idea: los 18 millones de toneladas de CO2 ahorrados cada año en Reino Unido gracias a los materiales reciclados equivalen a retirar de la circulación cinco millones de automóviles.</p>
+            </ul>
+            <img src="IMG-20250430-WA0006.jpg" alt="Beneficios del reciclaje"width="460" height="260" controls>
+        </section>
+
+        <section class="seccion">
+            <h2>Cómo podemos reciclar en casa</h2>
+            <p>Todos podemos contribuir desde casa:</p>
+            <ul>
+                <li><strong>Separar residuos en bolsas distintas.</li></strong>
+                <li><strong>Enjuagar envases antes de reciclar.</li></strong>
+                <li><strong>Reducir el uso de plásticos de un solo uso.</li></strong>
+                <li><strong>Depositar residuos electrónicos en centros autorizados.</li></strong>
+                <li><strong>Compra de manera consciente.</li></strong>
+                <p>Haz un lista de lo que realmente necesitas, de esta manera evitarás comprar cosas innecesarias y ahorras dinero.</p>
+                <li><strong>Instala recipientes específicos donde puedas dividir la basura:</li></strong>
+                <p>orgánica, vidrio, cartón, plásticos y residuos tóxicos. </p>
+                <li><strong>Separa correctamente los residuos e indica al recolector de basura como están clasificados. </li></strong>
+                <li><strong>Lava los envases y las latas antes de tirarlas para evitar vertidos tóxicos en el agua. </li></strong>
+                <p>
+Acciones fáciles y sencillas para reciclar en casa
+Acciones fáciles y sencillas para reciclar en casa
+Reciclar permite crear un objeto a partir de otro ya usado, contribuyendo a la disminución de desechos. Sin duda, es uno de los objetivos globales para frenar la contaminación y el cambio climático, dos problemas que afectan de sobremanera al planeta. Por eso, es fundamental que esta acción la fomentemos en el hogar. A continuación te compartimos algunas sugerencias: 
+
+Compra de manera consciente. Haz un lista de lo que realmente necesitas, de esta manera evitarás comprar cosas innecesarias y ahorras dinero. 
+
+Instala recipientes específicos donde puedas dividir la basura: orgánica, vidrio, cartón, plásticos y residuos tóxicos. 
+
+Separa correctamente los residuos e indica al recolector de basura como están clasificados. 
+
+Lava los envases y las latas antes de tirarlas para evitar vertidos tóxicos en el agua. 
+
+ 
+
+Te invitamos a que realices estas tareas junto con tu familia, recuerda que pequeñas acciones generan grandes cambios. ¡Comienza ahora!
+
+ Reciclar y reutilizar van de la mano, cuando reutilizas también pasan cosas buenas..
+Reduces la cantidad de basura, ahorras dinero y cuidas el medio ambiente. Si eres de los les gusta darle nueva vida a los objetos, lleva a cabo las siguientes ideas.</p>
+<li><strong>Utiliza las botellas de vidrio para guardar semillas, cereales, leguminosas o granos. También como floreros o jarras para agua.</li></strong>
+<li><strong>La ropa que ya no usas la podrías ocupar para hacer una cobija, una cama o un juguete para tu mascota. Los pantalones de mezclilla transfórmalos en increíbles bolsas. </li></strong>
+<li><strong>Las latas de aluminio las puedes convertir en macetas, en porta lápices o para colocar cubiertos. ¡Píntalas y hecha a volar tu imaginación! </li></strong>
+<li><strong>Las hojas que sobran de los cuadernos, únelas y forma uno nuevo. </li></strong>
+<p>Es importante que lo que decidas volver a usar lo limpies muy bien para eliminar residuos y olores.
+Es fundamental concienciar sobre la importancia de reciclar y reutilizar, al hacerlo los beneficios serian infinitos tanto para el planeta como para la especie humana.</p>
+            </ul>
+            <img src="IMG-20250429-WA0001.jpg" alt="Reciclaje doméstico"width="460" height="260" controls>
+        </section>
+
+        <section class="seccion clearfix">
+            <h2>Video educativo sobre reciclaje</h2>
+            <video class="video-derecha" controls>
+                <source src="Screen_Recording_20250429_203946_Google.mp4" type="video/mp4"width="460" height="260" controls>
+                Tu navegador no soporta la reproducción de video.
+            </video>
+            <p><em>Este video muestra cómo separar residuos correctamente y cómo se procesan en plantas de reciclaje.</em></p>
+        </section>
+
+        <div class="clearfix">
+            <video class="video-izquierda" controls>
+                <source src="videor3.mp4" type="video/mp4"width="460" height="260" controls>
+                Tu navegador no soporta la reproducción de video.
+            </video>
         </div>
 
-        <div id="modal-pago">
-            <h3>Selecciona un método de pago</h3>
-            <button onclick="metodoPago('oxxo')">OXXO</button>
-            <button onclick="metodoPago('tarjeta')">Tarjeta</button>
-        </div>
+        <section class="seccion">
+            <h2>Datos curiosos sobre el reciclaje</h2>
+            <ul>
+                <li><strong>Una tonelada de papel ahorra más de 30.000 litros de agua.</li></strong>
+                <li><strong>Una botella de plástico puede tardar más de 500 años en descomponerse.</li></strong>
+                <li><strong>El aluminio se puede reciclar indefinidamente sin perder calidad.</li></strong>
+                <p>A veces no somos conscientes de los residuos que producimos. Lo cierto, es que en las últimas cinco décadas hemos generado más basura que en toda la historia de la humanidad hasta 1970. ¿Qué otras curiosidades, o realidades, existen alrededor del reciclaje? Veamos algunas:</p>
+                <h2>1.</h2><p>Más del 60% de residuos que acaban en la basura general, podrían reciclarse. Es decir, casi 2/3 partes de los artículos que se depositan en los vertederos podrían haberse reciclado.</p> <h2>2.</h2><p>Fabricar papel reciclado consume un 62% menos de energía. Su creación supone un 86% menos de agua que la generación de papel nuevo.</p>
+                <h2>3.</h2><p>Crear latas a partir de recicladas supone un ahorro de energía del 95%. Su descomposición tarda 500 años, pero, si se reciclan están de vuelta en el supermercado en menos de dos meses.</p>
+                <h2>4.</h2><p>Podríamos salvar 250 millones de árboles si recicláramos los periódicos. Para fabricar 1.000kg de papel se necesitan 3.000 kg de madera, por lo que, si queremos salvar nuestros bosques no podremos dejar atrás su reciclado.</p>
+                <h2>5.</h2><p>El vidrio emplea incluso 5.000 años en desaparecer de nuestro entorno. Pero una botella de vidrio es 100% reciclable, por lo que podemos utilizarla de manera indefinida. Por ejemplo, si recicláramos una botella ahorraríamos suficiente energía para alimentar una bombilla de 100 vatios durante cuatro horas.</p>
+                <h2>6.</h2><p>Cuando reciclamos una botella de plástico, el ahorro de energía que se logra es proporcional a la iluminación de una bombilla por 6 horas.</p>
+                <h2>7.</h2><p>Para generar una botella de plástico con una capacidad de 1 litro son necesarios 80 litros de agua.</p>
+                <h2>8.</h2><p>La acumulación de bolsas de plástico en el océano acaba con más de un millón de criaturas marinas anualmente.</p>
+                </ul>
+        </section>
 
-        <div id="modal-pago-oxxo" style="display:none;">
-            <h4>Pago OXXO</h4>
-            <p id="total-pago-modal">Total a pagar: $0</p>
-            <button onclick="compraExitosa()">Confirmar pago OXXO</button>
-        </div>
+        <section class="seccion">
+            <h2>Conclusión</h2>
+            <p><strong>Reciclar es responsabilidad de todos.</strong> Cada acción cuenta para un futuro sostenible.</p>
+            <p> El reciclaje es muy importante para la preservación del medio ambiente. Cuando uno recicla se obtiene varias ventajas; con el reciclaje se evita el desperdicio de la materia prima y recursos no renovables, además se ahorra energía, se evita la contaminación. En conclusión el reciclaje es una practica muy importante para la conservación del medio ambiente reciclando se puede mejorar mucho la condición de nuestro planeta y tener un estilo de vida mejor. La gente que cree que no es necesario reciclar espero que no es necesario reciclar espero que lo piense de nuevo, pues cada uno debe contribuir con el planeta.</p>
+            <img src="IMG-20250429-WA0004.jpg" alt="Mensaje final de reciclaje"width="460" height="260" controls>
+        </section>
 
-        <div id="modal-pago-tarjeta" style="display:none;">
-            <h4>Pago con tarjeta</h4>
-            <p id="total-pago-modal">Total a pagar: $0</p>
-            <button onclick="compraExitosa()">Confirmar pago tarjeta</button>
-        </div>
+        <section class="seccion">
+            <h2>Impacto del reciclaje</h2>
 
-        <div id="modal-direccion" style="display:none;">
-            <h4>Dirección de envío</h4>
-            <form>
-                <label for="estado">Estado:</label>
-                <input type="text" id="estado" required><br><br>
-                <label for="municipio">Municipio:</label>
-                <input type="text" id="municipio" required><br><br>
-                <label for="codigo-postal">Código Postal:</label>
-                <input type="text" id="codigo-postal" required><br><br>
-                <label for="calle">Calle:</label>
-                <input type="text" id="calle" required><br><br>
-                <label for="referencia">Referencia:</label>
-                <input type="text" id="referencia"><br><br>
-                <button type="button" onclick="confirmarPago()">Confirmar</button>
-            </form>
-        </div>
+            <h3>1. Beneficios Ambientales</h3>
+            <ul>
+                <li>Reducción de residuos en vertederos.</li>
+                <li>Conservación de recursos naturales como madera y minerales.</li>
+                <li>Disminución de la contaminación del aire y agua.</li>
+            </ul>
+            <video class="video-derecha" controls>
+                <source src="videorr4.mp4" type="video/mp4"width="460" height="260" controls>
+                Tu navegador no soporta la reproducción de video.
+            </video>
+            <img src="maxresdefault-1.jpg" alt="Reciclaje ambiental"width="460" height="260" controls>
+
+            <h3>2. Impacto Económico</h3>
+            <ul>
+                <li>Generación de empleo en recolección y procesamiento.</li>
+                <li>Ahorro en costos de gestión de residuos.</li>
+                <li>Fomento de la economía circular.</li>
+            </ul>
+
+            <h3>3. Beneficios Sociales</h3>
+            <ul>
+                <li>Mayor conciencia ambiental.</li>
+                <li>Participación comunitaria en iniciativas de reciclaje.</li>
+            </ul>
+            <img src="Contenedores-reciclaje.jpg" alt="Reciclaje social"width="460" height="260" controls>
+
+            <h3>Más información:</h3>
+            <ul>
+                <li><a href="https://reducereutilizarecicla.org/que-es-reutilizar/">Reciclaje y Reutilización</a></li>
+                <li><a href="https://gestorderesiduosmadrid.es/reutilizar-vs-reciclar-diferencias-y-beneficios/">Diferencias y beneficios</a></li>
+                <li><a href="https://www.gob.mx/semarnat/acciones-y-programas/clasificacion-reciclaje-y-valoracion-de-los-rsu">Clasificación de residuos</a></li>
+                <li><a href="https://www.bienestar.gob.mx/sibien/index.php/sustentabilidad/20-sustentabilidad/29-reciclaje-y-reutilización">Reciclaje en México</a></li>
+            </ul>
+
+            <img src="cfccd716bd13a4dbb11415a95c125f6b.jpg" alt="Infografía de reciclaje"width="460" height="260" controls>
+
+            <video class="video-centro" controls>
+                <source src="VID-20250604-WA0003.mp4" type="video/mp4"width="460" height="260" controls>
+                Tu navegador no soporta la reproducción de video.
+            </video>
+
+            <img src="IMG-20250604-WA0005.jpg" alt="Reciclaje escolar"width="460" height="260" controls>
+
+            <video class="video-centro" controls>
+                <source src="VID-20250604-WA0004.mp4" type="video/mp4"width="460" height="260" controls>
+                Tu navegador no soporta la reproducción de video.
+            </video>
+
+            <video class="video-centro" controls>
+                <source src="Clips2.mp4" type="video/mp4"width="460" height="260" controls>
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </section>
     </main>
-
-    <script src="script.js"></script>
 </body>
 </html>
