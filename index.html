@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda en línea</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><button onclick="verProductos('labiales')">labiales</button></li>
+                <li><button onclick="verProductos('productos para la cara')">productos para la cara</button></li>
+                <li><button onclick="verProductos('perfumes')">perfumes</button></li>
+                <li><button onclick="verProductos('uñas brillos')">uñas brillos</button></li>
+                <li><button onclick="verProductos('cosas-del-hogar')">Cosas del Hogar</button></li>
+                <li><button onclick="verProductos('electrodomesticos')">Electrodomésticos</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="productos-ropa-mujer" class="productos-categoria"></div>
+        <div id="productos-ropa-hombre" class="productos-categoria"></div>
+        <div id="productos-zapatos" class="productos-categoria"></div>
+        <div id="productos-accesorios" class="productos-categoria"></div>
+        <div id="productos-cosas-del-hogar" class="productos-categoria"></div>
+        <div id="productos-electrodomesticos" class="productos-categoria"></div>
+        
+        <div id="productos-carrito">
+            <h3>Carrito de compras</h3>
+            <ul id="productos-carrito-lista"></ul>
+            <p id="total-pagar">Total a pagar: $0</p>
+        </div>
+
+        <div id="modal-pago">
+            <h3>Selecciona un método de pago</h3>
+            <button onclick="metodoPago('oxxo')">OXXO</button>
+            <button onclick="metodoPago('tarjeta')">Tarjeta</button>
+        </div>
+
+        <div id="modal-pago-oxxo" style="display:none;">
+            <h4>Pago OXXO</h4>
+            <p id="total-pago-modal">Total a pagar: $0</p>
+            <button onclick="compraExitosa()">Confirmar pago OXXO</button>
+        </div>
+
+        <div id="modal-pago-tarjeta" style="display:none;">
+            <h4>Pago con tarjeta</h4>
+            <p id="total-pago-modal">Total a pagar: $0</p>
+            <button onclick="compraExitosa()">Confirmar pago tarjeta</button>
+        </div>
+
+        <div id="modal-direccion" style="display:none;">
+            <h4>Dirección de envío</h4>
+            <form>
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" required><br><br>
+                <label for="municipio">Municipio:</label>
+                <input type="text" id="municipio" required><br><br>
+                <label for="codigo-postal">Código Postal:</label>
+                <input type="text" id="codigo-postal" required><br><br>
+                <label for="calle">Calle:</label>
+                <input type="text" id="calle" required><br><br>
+                <label for="referencia">Referencia:</label>
+                <input type="text" id="referencia"><br><br>
+                <button type="button" onclick="confirmarPago()">Confirmar</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
